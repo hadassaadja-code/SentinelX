@@ -1,0 +1,10 @@
+{
+  "name": "sentinelx",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix server run db && npm --prefix web install",
+    "build": "npm --prefix web run build",
+    "start": "npm --prefix web run build && npm --prefix server start",
+    "reset": "npm --prefix server run reset"
+  }
+}
